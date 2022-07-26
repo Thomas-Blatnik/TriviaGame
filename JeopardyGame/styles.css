@@ -1,0 +1,266 @@
+
+
+body {
+  
+    height: 100vh;
+    display: flex;
+    background-color: blue;
+    color: yellow;
+
+    
+}
+
+.category-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: blue;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.clue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    font-size: 30px;
+    
+}
+
+#board {
+    width: 80vw;
+    margin: 20px;
+    border: 5px solid black;
+    flex-grow: 5;
+    flex-shrink: 1;
+}
+
+#category1 {
+    grid-area: category1;
+}
+
+#category2 {
+    grid-area: category2;
+}
+
+#category3 {
+    grid-area: category3;
+}
+
+#category4 {
+    grid-area: category4;
+}
+
+#category5 {
+    grid-area: category5;
+}
+
+#category6 {
+    grid-area: category6;
+}
+
+#clue0 {
+    grid-area: clue0;
+}
+
+#clue1 {
+    grid-area: clue1;
+}
+
+#clue2 {
+    grid-area: clue2;
+}
+
+#clue3 {
+    grid-area: clue3;
+}
+
+#clue4 {
+    grid-area: clue4;
+}
+
+#clue5 {
+    grid-area: clue5;
+}
+
+#clue6 {
+    grid-area: clue6;
+}
+
+#clue7 {
+    grid-area: clue7;
+}
+
+#clue8 {
+    grid-area: clue8;
+}
+
+#clue9 {
+    grid-area: clue9;
+}
+
+#clue10 {
+    grid-area: clue10;
+}
+
+#clue11 {
+    grid-area: clue11;
+}
+
+#clue12 {
+    grid-area: clue12;
+}
+
+#clue13 {
+    grid-area: clue13;
+}
+
+#clue14 {
+    grid-area: clue14;
+}
+
+#clue15 {
+    grid-area: clue15;
+}
+
+#clue16 {
+    grid-area: clue16;
+}
+
+#clue17 {
+    grid-area: clue17;
+}
+
+#clue18 {
+    grid-area: clue18;
+}
+
+#clue19 {
+    grid-area: clue19;
+}
+
+#clue20 {
+    grid-area: clue20;
+}
+
+#clue21 {
+    grid-area: clue21;
+}
+
+#clue22 {
+    grid-area: clue22;
+}
+
+#clue23 {
+    grid-area: clue23;
+}
+
+#clue24 {
+    grid-area: clue24;
+}
+
+#clue25 {
+    grid-area: clue25;
+}
+
+#clue26 {
+    grid-area: clue26;
+}
+
+#clue27 {
+    grid-area: clue27;
+}
+
+#clue28 {
+    grid-area: clue28;
+}
+
+#clue29 {
+    grid-area: clue29;
+}
+
+#board {
+    margin: 0px;
+    gap: 5px;
+    background-color: black;
+    display: grid;
+    grid-template-areas: 
+        "category1 category2 category3 category4 category5 category6"
+        "clue0 clue5 clue10 clue15 clue20 clue25"
+        "clue1 clue6 clue11 clue16 clue21 clue26"
+        "clue2 clue7 clue12 clue17 clue22 clue27"
+        "clue3 clue8 clue13 clue18 clue23 clue28"
+        "clue4 clue9 clue14 clue19 clue24 clue29";  
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#scoreboard {
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 20vw;
+    justify-content: center;
+    margin: 20px;
+    
+}
+
+#board button {
+    display: block;
+    color: yellow;
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#board button:hover {
+    background-color: rgb(108, 108, 255);
+    
+}
+
+@media  screen and (max-width: 1300px) {
+    .category-name {
+        font-size: 1em;
+    }
+
+    #board button {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .category-name {
+        font-size: 0.8em;
+    }
+
+    #board button {
+        font-size: 0.8em;
+    }
+}
+
+@media  (max-width: 1000px) {
+    body {
+        
+        flex-direction: column;
+        font-size: 0.6em;
+        flex-grow: 1;
+    }
+
+    #board {
+        width: 100%;
+    }
+
+    #board button {
+        font-size: 0.6em;
+    }
+
+    #scoreboard {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
